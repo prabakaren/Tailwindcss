@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <!-- tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- responsive navbar -->
+
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+
+
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+
+
+        <ul class="gap-5 hidden text-gray-600 md:flex ">
+            <li>
+                <a class="hover:underline" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="./product.html" >Products</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+<!-- side navbar -->
+   <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right:-50%">
+    <div class="text-right p-10">
+        <p id="navclose" class="inline cursor-pointer">X</p>
+    </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center">
+            <li>
+                <a class="hover:underline" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="./product.html" >Products</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <section class="text-center">
+        <h1 class="text-3xl text-center font-bold p-5">Our Products</h1>
+        <input id="search" type="text" placeholder="Search For Products" class="border border-black mb-5 p-3" style="width: 80%;">
+    </section>
+
+    <section class="p-4 text-center">
+        
+
+        <div id="container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./images/poo1.png" class="inline hover:shadow-xl transform hover:translate-y-2 "  alt="">
+                <h1>Lilly pot</h1>
+                <p>₹200</p>
+            </div>
+            <div><img src="./images/poo2.png" class="inline hover:shadow-xl transform hover:translate-y-2 " alt="">
+                <h1>Rose pot</h1>
+                <p>₹200</p>
+            </div>
+            <div><img src="./images/poo3.png" class="inline hover:shadow-xl transform hover:translate-y-2 " alt="">
+                <h1>Sunflower pot</h1>
+                <p>₹200</p>
+            </div>
+            <div><img src="./images/poo4.png" class="inline hover:shadow-xl transform hover:translate-y-2 " alt="">
+                <h1>Angel pot</h1>
+                <p>₹200</p>
+            </div>
+            <div>
+                <img src="./images/poo1.png" class="inline hover:shadow-xl transform hover:translate-y-2 "  alt="">
+                <h1>Lilly pot</h1>
+                <p>₹200</p>
+            </div>
+            <div><img src="./images/poo2.png" class="inline hover:shadow-xl transform hover:translate-y-2 " alt="">
+                <h1>Rose pot</h1>
+                <p>₹200</p>
+            </div>
+            <div><img src="./images/poo3.png" class="inline hover:shadow-xl transform hover:translate-y-2 " alt="">
+                <h1>Sunflower pot</h1>
+                <p>₹200</p>
+            </div>
+            <div><img src="./images/poo4.png" class="inline hover:shadow-xl transform hover:translate-y-2 " alt="">
+                <h1>Angel pot</h1>
+                <p>₹200</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+
+    <section class="bg-green-100 p-10 flex flex-col gap-6">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <p>©2021 Greenday.com</p>
+
+    </section>
+
+    <script src="product.js"></script>
+</body>
+
+</html>
